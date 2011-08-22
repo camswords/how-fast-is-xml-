@@ -1,35 +1,28 @@
 package com.client;
 
-import java.io.BufferedReader;
+import com.client.http.GetRequest;
+import com.client.http.WebServer;
+import com.client.http.HttpWebServerFactory;
+import com.client.http.Response;
+
 import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.PrintStream;
-import java.net.InetAddress;
-import java.net.InetSocketAddress;
-import java.net.Socket;
 
 public class PerformanceTest {
 
     public static void main(String[] args) throws IOException {
-        Socket socket = new Socket();
-        socket.connect(new InetSocketAddress(InetAddress.getLocalHost(), 8080));
 
-        PrintStream output = new PrintStream(socket.getOutputStream());
-        output.print("GET / HTTP/1.1\r\n");
-        output.print("Host: localhost:8080\r\n");
-        output.print("\r\n");
-        
+        WebServer webServer = new HttpWebServerFactory().connect();
 
-        BufferedReader reader = new BufferedReader(new InputStreamReader(socket.getInputStream()));
+        try {
 
-        while(reader.ready()) {
-            String line = reader.readLine();
+            Response response = webServer.send(new GetRequest("/"));
 
-            if (line == null) break;
+            for (String line : response.lines()) {
+                System.out.println(line);
+            }
 
-            System.out.println(line);
+        } finally {
+            webServer.disconnect();
         }
-        output.close();
-        reader.close();
     }
 }
