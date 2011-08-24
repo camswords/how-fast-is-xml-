@@ -23,7 +23,7 @@ public class BufferedReader {
         try {
             List<String> lines = Lists.create();
 
-            new Timer(60, UnitOfTime.SECONDS).waitFor(new ReaderIsReady(reader));
+            new Timer(5, UnitOfTime.SECONDS).waitFor(new ReaderIsReady(reader));
 
             while(reader.ready()) {
                 String line = reader.readLine();

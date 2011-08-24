@@ -14,12 +14,8 @@ public class PerformanceTest {
         WebServer webServer = new HttpWebServerFactory().connect();
 
         try {
-
             Response response = webServer.send(new GetRequest("/"));
-
-            for (String line : response.lines()) {
-                System.out.println(line);
-            }
+            System.out.println("response is ok? " + response.isOk());
 
         } finally {
             webServer.disconnect();

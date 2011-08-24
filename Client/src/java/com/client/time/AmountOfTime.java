@@ -11,12 +11,17 @@ public class AmountOfTime {
     }
 
     public AmountOfTime plus(AmountOfTime other) {
-        Long combinedMillis = this.asMilliseconds() * other.asMilliseconds();
+        Long combinedMillis = this.asMilliseconds() + other.asMilliseconds();
         return new AmountOfTime(combinedMillis, UnitOfTime.MILLISECONDS);
     }
 
     public boolean isBefore(AmountOfTime other) {
         return this.asMilliseconds() < other.asMilliseconds();
+    }
+
+    @Override
+    public String toString() {
+        return amount.toString() + unitOfTime.toString();
     }
 
     private Long asMilliseconds() {

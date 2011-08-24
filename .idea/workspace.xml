@@ -59,7 +59,17 @@
   </component>
   <component name="FileColors" enabled="true" enabledForTabs="true" />
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="PerformanceTest.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Client/src/java/com/client/PerformanceTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="0" selection-start="364" selection-end="364" vertical-scroll-proportion="0.3617021">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -69,22 +79,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/Client/src/java/com/client/http/WebServer.java" />
-        <option value="$PROJECT_DIR$/Client/src/java/com/client/http/io/SocketConnectionFactory.java" />
-        <option value="$PROJECT_DIR$/Client/src/java/com/client/http/Response.java" />
-        <option value="$PROJECT_DIR$/Client/src/java/com/client/PerformanceTest.java" />
-        <option value="$PROJECT_DIR$/Client/src/java/com/client/condition/Condition.java" />
-        <option value="$PROJECT_DIR$/Client/src/java/com/client/util/ReaderIsReady.java" />
-        <option value="$PROJECT_DIR$/Client/src/java/com/client/condition/ReaderIsReady.java" />
-        <option value="$PROJECT_DIR$/Client/src/java/com/client/util/TimeUnit.java" />
         <option value="$PROJECT_DIR$/Client/src/java/com/client/util/ExecutingThread.java" />
         <option value="$PROJECT_DIR$/Client/src/java/com/client/util/SystemClock.java" />
         <option value="$PROJECT_DIR$/Client/src/java/com/client/util/UnitOfTime.java" />
         <option value="$PROJECT_DIR$/Client/src/java/com/client/util/Time.java" />
         <option value="$PROJECT_DIR$/Client/src/java/com/client/util/AmountOfTime.java" />
-        <option value="$PROJECT_DIR$/Client/src/java/com/client/time/AmountOfTime.java" />
-        <option value="$PROJECT_DIR$/Client/src/java/com/client/http/io/BufferedReader.java" />
         <option value="$PROJECT_DIR$/Client/src/java/com/client/util/Timer.java" />
+        <option value="$PROJECT_DIR$/Client/src/java/com/client/http/Response.java" />
+        <option value="$PROJECT_DIR$/Client/src/java/com/client/time/PointInTime.java" />
+        <option value="$PROJECT_DIR$/Client/src/java/com/client/time/ConditionFailedToBeSatisfiedWithinTime.java" />
+        <option value="$PROJECT_DIR$/Client/src/java/com/client/time/Timer.java" />
+        <option value="$PROJECT_DIR$/Client/src/java/com/client/condition/Condition.java" />
+        <option value="$PROJECT_DIR$/Client/src/java/com/client/condition/ReaderIsReady.java" />
+        <option value="$PROJECT_DIR$/Client/src/java/com/client/time/AmountOfTime.java" />
+        <option value="$PROJECT_DIR$/Client/src/java/com/client/time/UnitOfTime.java" />
+        <option value="$PROJECT_DIR$/Client/src/java/com/client/http/io/BufferedReader.java" />
+        <option value="$PROJECT_DIR$/Client/src/java/com/client/PerformanceTest.java" />
       </list>
     </option>
   </component>
@@ -164,6 +174,58 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="XmlPerformance" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="time" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="XmlPerformance" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="condition" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="PackagesPane" />
@@ -190,6 +252,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.client.time" />
       <recent name="com.client.util" />
       <recent name="com.client.http" />
     </key>
@@ -402,7 +465,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="874" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -417,7 +480,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24946082" sideWeight="0.6618037" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32891247" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32891247" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -459,45 +522,10 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Client/src/java/com/client/http/io/Socket.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="13" selection-start="156" selection-end="156" vertical-scroll-proportion="-0.108510636" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Server/src/java/com/server/WebServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="14" selection-start="149" selection-end="149" vertical-scroll-proportion="0.21702127">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Server/src/java/com/server/EverythingsOkServer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="13" selection-start="234" selection-end="234" vertical-scroll-proportion="0.14945056">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Client/src/java/com/client/http/GetRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="27" selection-start="345" selection-end="351" vertical-scroll-proportion="0.5425532">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Client/src/java/com/client/condition/Condition.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="28" selection-start="89" selection-end="89" vertical-scroll-proportion="0.14468086">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Client/src/java/com/client/condition/ReaderIsReady.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="0" selection-start="247" selection-end="247" vertical-scroll-proportion="0.4857143">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -508,40 +536,84 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Client/src/java/com/client/time/UnitOfTime.java">
+    <entry file="file://$PROJECT_DIR$/Client/src/java/com/client/http/GetRequest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="120" selection-end="120" vertical-scroll-proportion="0.18888889">
+        <state line="12" column="16" selection-start="190" selection-end="190" vertical-scroll-proportion="0.43404254">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Client/src/java/com/client/time/PointInTime.java">
+    <entry file="jar:///System/Library/Frameworks/JavaVM.framework/Versions/1.6.0/Classes/classes.jar!/java/io/BufferedReader.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="11" selection-start="117" selection-end="117" vertical-scroll-proportion="0.22666667">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Client/src/java/com/client/time/AmountOfTime.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="40" selection-start="130" selection-end="130" vertical-scroll-proportion="0.18888889">
+        <state line="5" column="20" selection-start="152" selection-end="152" vertical-scroll-proportion="0.14945056">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Client/src/java/com/client/time/SystemClock.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="29" selection-start="224" selection-end="224" vertical-scroll-proportion="0.22417583">
+        <state line="5" column="0" selection-start="85" selection-end="85" vertical-scroll-proportion="0.1954023">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Client/src/java/com/client/time/ConditionFailedToBeSatisfiedWithinTime.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="77" selection-start="103" selection-end="103" vertical-scroll-proportion="0.075555556">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Client/src/java/com/client/condition/Condition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="22" selection-start="111" selection-end="111" vertical-scroll-proportion="0.22666667">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Client/src/java/com/client/condition/ReaderIsReady.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="23" selection-start="534" selection-end="534" vertical-scroll-proportion="0.8206897">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Client/src/java/com/client/time/UnitOfTime.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="24" selection-start="575" selection-end="575" vertical-scroll-proportion="0.75555557">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Client/src/java/com/client/time/AmountOfTime.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="18" selection-start="275" selection-end="275" vertical-scroll-proportion="0.093333334">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Client/src/java/com/client/time/PointInTime.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="38" selection-start="465" selection-end="465" vertical-scroll-proportion="0.5425532">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Client/src/java/com/client/time/Timer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="20" selection-start="647" selection-end="647" vertical-scroll-proportion="0.5978022">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Client/src/java/com/client/http/io/BufferedReader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="0" selection-start="919" selection-end="919" vertical-scroll-proportion="0.81914896">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="7" column="27" selection-start="195" selection-end="195" vertical-scroll-proportion="0.023404256">
+          <folding />
         </state>
       </provider>
     </entry>
@@ -554,23 +626,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Client/src/java/com/client/http/WebServer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="21" selection-start="374" selection-end="374" vertical-scroll-proportion="0.52978724">
+        <state line="19" column="23" selection-start="376" selection-end="376" vertical-scroll-proportion="0.52978724">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Client/src/java/com/client/time/Timer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="46" selection-start="562" selection-end="562" vertical-scroll-proportion="0.39787233">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Client/src/java/com/client/PerformanceTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="0" selection-start="448" selection-end="448" vertical-scroll-proportion="0.47021276">
+        <state line="15" column="0" selection-start="364" selection-end="364" vertical-scroll-proportion="0.3617021">
           <folding />
         </state>
       </provider>

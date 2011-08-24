@@ -19,4 +19,8 @@ public class ReaderIsReady implements Condition {
             throw new RuntimeException("failed attempting to check for readiness of reader", e);
         }
     }
+
+    public String describe() {
+        return "reading is ready";
+    }
 }

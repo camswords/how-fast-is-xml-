@@ -1,10 +1,6 @@
 package com.client.time;
 
 import com.client.condition.Condition;
-import com.client.time.AmountOfTime;
-import com.client.time.PointInTime;
-import com.client.time.SystemClock;
-import com.client.time.UnitOfTime;
 import com.client.util.ExecutingThread;
 
 public class Timer {
@@ -21,13 +17,15 @@ public class Timer {
         PointInTime endTime = systemClock.now().plus(maximumWaitTime);
 
         while(systemClock.now().isBefore(endTime)) {
-
             if (condition.isSatisfied()) {
-                break;
+                return;
             }
 
             ExecutingThread.waitATinyBit();
         }
+
+        String message = "Condition [" + condition.describe() + "] failed to be satisfied within " + maximumWaitTime;
+        throw new ConditionFailedToBeSatisfiedWithinTime(message);
         
     }
 }
