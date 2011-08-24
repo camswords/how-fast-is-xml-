@@ -11,8 +11,15 @@ public class AmountOfTime {
     }
 
     public AmountOfTime plus(AmountOfTime other) {
-        Long combinedMillis = this.asMilliseconds() + other.asMilliseconds();
-        return new AmountOfTime(combinedMillis, UnitOfTime.MILLISECONDS);
+        return new AmountOfTime(this.asMilliseconds() + other.asMilliseconds(), UnitOfTime.MILLISECONDS);
+    }
+
+    public AmountOfTime minus(AmountOfTime other) {
+        return new AmountOfTime(this.asMilliseconds() - other.asMilliseconds(), UnitOfTime.MILLISECONDS);
+    }
+    
+    public AmountOfTime divide(int scalar) {
+        return new AmountOfTime(this.asMilliseconds() / scalar, UnitOfTime.MILLISECONDS);
     }
 
     public boolean isBefore(AmountOfTime other) {

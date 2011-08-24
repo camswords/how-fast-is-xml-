@@ -15,4 +15,8 @@ public class PointInTime {
     public boolean isBefore(PointInTime time) {
         return millisecondsSince1970.isBefore(time.millisecondsSince1970);
     }
+
+    public AmountOfTime minus(PointInTime other) {
+        return millisecondsSince1970.minus(other.millisecondsSince1970);
+    }
 }
