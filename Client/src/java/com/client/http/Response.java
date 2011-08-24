@@ -14,7 +14,7 @@ public class Response {
     }
 
     public List<String> lines() {
-        return new BufferedReader(this.reader).readAllLines();
+        return new BufferedReader(this.reader).readUntil("\r\n");
     }
 
 }

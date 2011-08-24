@@ -69,22 +69,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/Client/src/java/com/client/http/FailedToReadAllLinesException.java" />
-        <option value="$PROJECT_DIR$/Client/src/java/com/client/http/Response.java" />
-        <option value="$PROJECT_DIR$/Client/src/java/com/client/http/BufferedReader.java" />
-        <option value="$PROJECT_DIR$/Client/src/java/com/client/http/SocketConnectionFactory.java" />
-        <option value="$PROJECT_DIR$/Client/src/java/com/client/http/Socket.java" />
-        <option value="$PROJECT_DIR$/Client/src/java/com/client/http/HttpConnection.java" />
-        <option value="$PROJECT_DIR$/Client/src/java/com/client/http/HttpConnectionFactory.java" />
-        <option value="$PROJECT_DIR$/Client/src/java/com/client/http/HttpGet.java" />
-        <option value="$PROJECT_DIR$/Client/src/java/com/client/util/Action.java" />
-        <option value="$PROJECT_DIR$/Client/src/java/com/client/http/io/ExceptionSuppressor.java" />
-        <option value="$PROJECT_DIR$/Client/src/java/com/client/http/GetRequest.java" />
-        <option value="$PROJECT_DIR$/Client/src/java/com/client/http/io/Socket.java" />
         <option value="$PROJECT_DIR$/Client/src/java/com/client/http/WebServer.java" />
-        <option value="$PROJECT_DIR$/Client/src/java/com/client/PerformanceTest.java" />
-        <option value="$PROJECT_DIR$/Client/src/java/com/client/http/io/BufferedReader.java" />
         <option value="$PROJECT_DIR$/Client/src/java/com/client/http/io/SocketConnectionFactory.java" />
+        <option value="$PROJECT_DIR$/Client/src/java/com/client/http/Response.java" />
+        <option value="$PROJECT_DIR$/Client/src/java/com/client/PerformanceTest.java" />
+        <option value="$PROJECT_DIR$/Client/src/java/com/client/condition/Condition.java" />
+        <option value="$PROJECT_DIR$/Client/src/java/com/client/util/ReaderIsReady.java" />
+        <option value="$PROJECT_DIR$/Client/src/java/com/client/condition/ReaderIsReady.java" />
+        <option value="$PROJECT_DIR$/Client/src/java/com/client/util/TimeUnit.java" />
+        <option value="$PROJECT_DIR$/Client/src/java/com/client/util/ExecutingThread.java" />
+        <option value="$PROJECT_DIR$/Client/src/java/com/client/util/SystemClock.java" />
+        <option value="$PROJECT_DIR$/Client/src/java/com/client/util/UnitOfTime.java" />
+        <option value="$PROJECT_DIR$/Client/src/java/com/client/util/Time.java" />
+        <option value="$PROJECT_DIR$/Client/src/java/com/client/util/AmountOfTime.java" />
+        <option value="$PROJECT_DIR$/Client/src/java/com/client/time/AmountOfTime.java" />
+        <option value="$PROJECT_DIR$/Client/src/java/com/client/http/io/BufferedReader.java" />
+        <option value="$PROJECT_DIR$/Client/src/java/com/client/util/Timer.java" />
       </list>
     </option>
   </component>
@@ -124,8 +124,6 @@
     </navigator>
     <panes>
       <pane id="Favorites" />
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -140,7 +138,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Server" />
+              <option name="myItemId" value="Client" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -153,9 +151,23 @@
               <option name="myItemId" value="Client" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -172,9 +184,9 @@
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="options.searchVisible" value="true" />
     <property name="dynamic.classpath" value="false" />
+    <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -403,9 +415,9 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24946082" sideWeight="0.6618037" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24946082" sideWeight="0.6618037" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32891247" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32891247" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -447,103 +459,109 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Client/src/java/com/client/http/io/Socket.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="13" selection-start="156" selection-end="156" vertical-scroll-proportion="-0.108510636" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Server/src/java/com/server/WebServer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="23" selection-start="335" selection-end="335" vertical-scroll-proportion="0.0">
+        <state line="7" column="14" selection-start="149" selection-end="149" vertical-scroll-proportion="0.21702127">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Client/src/java/com/client/util/Lists.java">
+    <entry file="file://$PROJECT_DIR$/Server/src/java/com/server/EverythingsOkServer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="18" selection-start="118" selection-end="118" vertical-scroll-proportion="0.2531915">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///System/Library/Frameworks/JavaVM.framework/Versions/1.6.0/Classes/classes.jar!/java/io/PrintWriter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="4" selection-start="661" selection-end="661" vertical-scroll-proportion="-1.6065934">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///System/Library/Frameworks/JavaVM.framework/Versions/1.6.0/Classes/classes.jar!/java/io/Writer.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="29" selection-start="161" selection-end="161" vertical-scroll-proportion="0.07472528">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Client/src/java/com/client/http/io/FailedToReadException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="13" selection-start="42" selection-end="42" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Client/src/java/com/client/http/HttpWebServerFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="21" selection-start="268" selection-end="268" vertical-scroll-proportion="0.28936172">
+        <state line="8" column="13" selection-start="234" selection-end="234" vertical-scroll-proportion="0.14945056">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Client/src/java/com/client/http/GetRequest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="16" selection-start="190" selection-end="190" vertical-scroll-proportion="0.43404254">
+        <state line="15" column="27" selection-start="345" selection-end="351" vertical-scroll-proportion="0.5425532">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Client/src/java/com/client/http/Response.java">
+    <entry file="file://$PROJECT_DIR$/Client/src/java/com/client/condition/Condition.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="52" selection-start="339" selection-end="339" vertical-scroll-proportion="0.57872343">
+        <state line="4" column="28" selection-start="89" selection-end="89" vertical-scroll-proportion="0.14468086">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Client/src/java/com/client/condition/ReaderIsReady.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="0" selection-start="247" selection-end="247" vertical-scroll-proportion="0.4857143">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Client/src/java/com/client/http/io/SocketConnectionFactory.java">
+    <entry file="file://$PROJECT_DIR$/Client/src/java/com/client/util/ExecutingThread.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="0" selection-start="248" selection-end="248" vertical-scroll-proportion="0.37777779">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="5" column="8" selection-start="106" selection-end="106" vertical-scroll-proportion="0.18085106">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Client/src/java/com/client/http/io/FailedToConnectException.java">
+    <entry file="file://$PROJECT_DIR$/Client/src/java/com/client/time/UnitOfTime.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="13" selection-start="42" selection-end="42" vertical-scroll-proportion="0.07234043">
+        <state line="5" column="0" selection-start="120" selection-end="120" vertical-scroll-proportion="0.18888889">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Client/src/java/com/client/time/PointInTime.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="11" selection-start="117" selection-end="117" vertical-scroll-proportion="0.22666667">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Client/src/java/com/client/time/AmountOfTime.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="40" selection-start="130" selection-end="130" vertical-scroll-proportion="0.18888889">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Client/src/java/com/client/time/SystemClock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="29" selection-start="224" selection-end="224" vertical-scroll-proportion="0.22417583">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Client/src/java/com/client/http/io/BufferedReader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="34" selection-start="747" selection-end="747" vertical-scroll-proportion="0.8680851">
+        <state line="37" column="0" selection-start="919" selection-end="919" vertical-scroll-proportion="0.81914896">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Client/src/java/com/client/http/io/Socket.java">
+    <entry file="file://$PROJECT_DIR$/Client/src/java/com/client/http/Response.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="13" selection-start="156" selection-end="156" vertical-scroll-proportion="-0.108510636">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="16" column="51" selection-start="338" selection-end="338" vertical-scroll-proportion="0.47021276">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Client/src/java/com/client/http/WebServer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="24" selection-start="174" selection-end="174" vertical-scroll-proportion="0.3617021">
+        <state line="19" column="21" selection-start="374" selection-end="374" vertical-scroll-proportion="0.52978724">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Client/src/java/com/client/time/Timer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="46" selection-start="562" selection-end="562" vertical-scroll-proportion="0.39787233">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -552,10 +570,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Client/src/java/com/client/PerformanceTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="13" selection-start="308" selection-end="308" vertical-scroll-proportion="0.47021276">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="18" column="0" selection-start="448" selection-end="448" vertical-scroll-proportion="0.47021276">
+          <folding />
         </state>
       </provider>
     </entry>

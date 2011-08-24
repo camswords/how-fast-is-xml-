@@ -1,6 +1,9 @@
 package com.client.http.io;
 
+import com.client.condition.ReaderIsReady;
+import com.client.time.UnitOfTime;
 import com.client.util.Lists;
+import com.client.time.Timer;
 
 import java.io.IOException;
 import java.io.Reader;
@@ -14,16 +17,20 @@ public class BufferedReader {
         this.reader = reader;
     }
 
-    public List<String> readAllLines() {
+    public List<String> readUntil(String terminationLine) {
         final java.io.BufferedReader reader = new java.io.BufferedReader(this.reader);
 
         try {
             List<String> lines = Lists.create();
 
+            new Timer(60, UnitOfTime.SECONDS).waitFor(new ReaderIsReady(reader));
+
             while(reader.ready()) {
                 String line = reader.readLine();
 
-                if (line == null) break;
+                if (terminationLine.equals(line)) {
+                    break;
+                }
 
                 lines.add(line);
             }
