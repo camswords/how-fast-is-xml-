@@ -20,18 +20,12 @@ public class PerformanceTest {
     }
 
     private ReportCard run() {
-        action.setUp();
         List<RunReport> runReports = Lists.create();
 
-        try {
-            CountDown countdown = new Timer(duration).countDown();
-    
-            while (countdown.isTickingAway()) {
-                RunReport runReport = new PerformanceTestRun().execute(action);
-                runReports.add(runReport);
-            }
-        } finally {
-            action.cleanUp();
+        CountDown countdown = new Timer(duration).countDown();
+
+        while (countdown.isTickingAway()) {
+            runReports.add(new PerformanceTestRun().execute(action));
         }
 
         return new ReportCard(duration, runReports);
@@ -40,7 +34,10 @@ public class PerformanceTest {
 
 
     public static void main(String[] args) throws IOException {
-        PerformanceTest test = new PerformanceTestBuilder().perform(new SendWebRequestAction()).forTime(2L, UnitOfTime.SECONDS).build();
+        PerformanceTest test = new PerformanceTestBuilder()
+                                    .perform(new SendWebRequestAction())
+                                    .forTime(2L, UnitOfTime.SECONDS)
+                                    .build();
 
         ReportCard reportCard = test.run();
 

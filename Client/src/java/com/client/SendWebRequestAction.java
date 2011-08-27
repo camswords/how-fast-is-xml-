@@ -16,15 +16,13 @@ public class SendWebRequestAction implements Action<Boolean> {
     }
 
     public Boolean execute() {
-        Response response = webServer.send(new GetRequest("/"));
-        return response.isOk();
-    }
+        WebServer webServer = new HttpWebServerFactory().connect();
 
-    public void setUp() {
-        this.webServer = webServerFactory.connect();
-    }
-
-    public void cleanUp() {
-        this.webServer.disconnect();
+        try {
+            Response response = webServer.send(new GetRequest("/"));
+            return response.isOk();
+        } finally {
+            webServer.disconnect();
+        }
     }
 }
