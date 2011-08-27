@@ -41,7 +41,7 @@ public class PerformanceTest {
     public static void main(String[] args) throws IOException {
         PerformanceTest test = new PerformanceTestBuilder()
                                     .perform(new SendWebRequestAction())
-                                    .forTime(2L, UnitOfTime.SECONDS)
+                                    .forTime(60L, UnitOfTime.SECONDS)
                                     .build();
 
         ReportCard reportCard = test.run();

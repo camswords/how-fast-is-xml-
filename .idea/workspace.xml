@@ -82,9 +82,9 @@
         <option value="$PROJECT_DIR$/Client/src/java/com/client/report/ReportEntryStatisticsCalculator.java" />
         <option value="$PROJECT_DIR$/Client/src/java/com/client/report/ReportEntries.java" />
         <option value="$PROJECT_DIR$/Client/src/java/com/client/ReportCard.java" />
-        <option value="$PROJECT_DIR$/Client/src/java/com/client/PerformanceTest.java" />
         <option value="$PROJECT_DIR$/Client/src/java/com/client/SendWebRequestAction.java" />
         <option value="$PROJECT_DIR$/Client/src/java/com/client/Action.java" />
+        <option value="$PROJECT_DIR$/Client/src/java/com/client/PerformanceTest.java" />
       </list>
     </option>
   </component>
@@ -473,7 +473,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="874" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -486,9 +486,9 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32997844" sideWeight="0.6618037" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32997844" sideWeight="0.6618037" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32891247" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32891247" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -625,15 +625,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Client/src/java/com/client/PerformanceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="42" selection-start="1125" selection-end="1125" vertical-scroll-proportion="0.6021277">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Client/src/java/com/client/http/io/BufferedReader.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="13" selection-start="256" selection-end="256" vertical-scroll-proportion="-0.26153848">
@@ -644,6 +635,15 @@
     <entry file="file://$PROJECT_DIR$/Client/src/java/com/client/run/PerformanceTestRun.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="13" selection-start="145" selection-end="145" vertical-scroll-proportion="0.21702127">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Client/src/java/com/client/PerformanceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="8" selection-start="872" selection-end="872" vertical-scroll-proportion="0.023404256">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
