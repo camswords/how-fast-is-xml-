@@ -1,5 +1,6 @@
 package com.client;
 
+import com.client.report.Statistics;
 import com.client.time.PointInTime;
 
 public class ReportEntry {
@@ -14,6 +15,11 @@ public class ReportEntry {
     }
 
     public String describe() {
-        return "ReportEntry success: " + wasSuccessful + " in time taken: " + endTime.minus(startTime);
+        String success = wasSuccessful ? "successful" : "UNSUCCESSFUL";
+        return success + " in time taken: " + endTime.minus(startTime);
+    }
+
+    public void addTo(Statistics statistics) {
+        statistics.add(endTime.minus(startTime));
     }
 }

@@ -1,18 +1,17 @@
 package com.client;
 
+import com.client.report.ReportEntryStatisticsCalculator;
+import com.client.report.Statistics;
 import com.client.time.AmountOfTime;
-import com.client.util.Lists;
 
+import java.io.PrintWriter;
+import java.io.StringWriter;
 import java.util.List;
 
 public class ReportCard {
 
-    private List<ReportEntry> reportEntries = Lists.create();
     private final AmountOfTime duration;
-
-    public ReportCard(AmountOfTime duration) {
-        this.duration = duration;
-    }
+    private final List<ReportEntry> reportEntries;
 
     public ReportCard(AmountOfTime duration, List<ReportEntry> reportEntries) {
         this.reportEntries = reportEntries;
@@ -20,19 +19,25 @@ public class ReportCard {
     }
 
     public String describe() {
+        Statistics statistics = new ReportEntryStatisticsCalculator().calculate(reportEntries);
+
         AmountOfTime averageTime = duration.divide(reportEntries.size());
 
-        StringBuilder description = new StringBuilder();
-        description.append("Runs (" + reportEntries.size() + " in total, " + averageTime + " average time per request)\n");
-        description.append("--------------------\n");
-        for (ReportEntry reportEntry : reportEntries) {
-            description.append(reportEntry.describe() + "\n");
-        }
-        description.append("--------------------\n");
-        return description.toString();
-    }
+        StringWriter description = new StringWriter();
+        PrintWriter writer = new PrintWriter(description);
 
-    public void add(ReportEntry reportEntry) {
-        reportEntries.add(reportEntry);
+        writer.println("Runs (" + reportEntries.size() + " in total, " + averageTime + " average time per request)");
+
+        for (int i = 0; i < reportEntries.size(); i++) {
+            writer.println((i + 1) + ". " + reportEntries.get(i).describe());
+        }
+
+        writer.println("runs: " + statistics.numberOfResults());
+        writer.println("maximum: " + statistics.maximum() + "ms");
+        writer.println("minimum: " + statistics.minimum() + "ms");
+        writer.println("average: " + statistics.average() + "ms");
+        writer.println("deviation: " + statistics.standardDeviation() + "ms");
+
+        return description.toString();
     }
 }
