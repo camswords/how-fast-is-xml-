@@ -1,5 +1,6 @@
 package com.client;
 
+import com.client.report.ReportEntries;
 import com.client.time.AmountOfTime;
 import com.client.time.CountDown;
 import com.client.time.Timer;
@@ -28,7 +29,7 @@ public class PerformanceTest {
             reportEntries.add(new PerformanceTestRun().execute(action));
         }
 
-        return new ReportCard(duration, reportEntries);
+        return new ReportCard(duration, new ReportEntries(reportEntries));
     }
 
 

@@ -60,21 +60,10 @@
   <component name="FileColors" enabled="true" enabledForTabs="true" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="PerformanceTest.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="PerformanceTest.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Client/src/java/com/client/PerformanceTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="0" selection-start="778" selection-end="778" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ReportCard.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Client/src/java/com/client/ReportCard.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="9" selection-start="1101" selection-end="1101" vertical-scroll-proportion="0.62197804">
+            <state line="12" column="13" selection-start="293" selection-end="293" vertical-scroll-proportion="-0.10212766">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -92,7 +81,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/Server/src/java/com/server/EverythingsOkServer.java" />
         <option value="$PROJECT_DIR$/Client/src/java/com/client/PerformanceTestRun.java" />
         <option value="$PROJECT_DIR$/Client/src/java/com/client/time/Timer.java" />
         <option value="$PROJECT_DIR$/Client/src/java/com/client/time/CountDownNotStartedException.java" />
@@ -102,12 +90,13 @@
         <option value="$PROJECT_DIR$/Client/src/java/com/client/condition/TimeIsAfter.java" />
         <option value="$PROJECT_DIR$/Client/src/java/com/client/SendWebRequestAction.java" />
         <option value="$PROJECT_DIR$/Client/src/java/com/client/Action.java" />
-        <option value="$PROJECT_DIR$/Client/src/java/com/client/PerformanceTest.java" />
         <option value="$PROJECT_DIR$/Client/src/java/com/client/PerformanceTestBuilder.java" />
         <option value="$PROJECT_DIR$/Client/src/java/com/client/ReportEntry.java" />
-        <option value="$PROJECT_DIR$/Client/src/java/com/client/report/ReportEntryStatisticsCalculator.java" />
-        <option value="$PROJECT_DIR$/Client/src/java/com/client/ReportCard.java" />
         <option value="$PROJECT_DIR$/Client/src/java/com/client/report/Statistics.java" />
+        <option value="$PROJECT_DIR$/Client/src/java/com/client/PerformanceTest.java" />
+        <option value="$PROJECT_DIR$/Client/src/java/com/client/report/ReportEntryStatisticsCalculator.java" />
+        <option value="$PROJECT_DIR$/Client/src/java/com/client/report/ReportEntries.java" />
+        <option value="$PROJECT_DIR$/Client/src/java/com/client/ReportCard.java" />
       </list>
     </option>
   </component>
@@ -496,7 +485,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="874" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -509,7 +498,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32997844" sideWeight="0.6618037" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32997844" sideWeight="0.6618037" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32891247" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -553,20 +542,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Client/src/java/com/client/time/CountDown.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="8" selection-start="636" selection-end="636" vertical-scroll-proportion="0.8131868">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Client/src/java/com/client/time/AmountOfTime.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="62" selection-start="963" selection-end="963" vertical-scroll-proportion="0.589011">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Client/src/java/com/client/time/PointInTime.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="21" column="44" selection-start="624" selection-end="624" vertical-scroll-proportion="0.63829786">
@@ -615,15 +590,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Client/src/java/com/client/PerformanceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="0" selection-start="778" selection-end="778" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///System/Library/Frameworks/JavaVM.framework/Versions/1.6.0/Classes/classes.jar!/java/lang/Math.class">
       <provider selected="true" editor-type-id="text-editor">
         <state line="27" column="4" selection-start="968" selection-end="968" vertical-scroll-proportion="-1.345055">
@@ -652,15 +618,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Client/src/java/com/client/report/ReportEntryStatisticsCalculator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="26" selection-start="386" selection-end="386" vertical-scroll-proportion="0.5425532">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Client/src/java/com/client/report/Statistics.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="36" column="21" selection-start="815" selection-end="815" vertical-scroll-proportion="0.63829786">
@@ -670,9 +627,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Client/src/java/com/client/time/AmountOfTime.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="24" selection-start="614" selection-end="614" vertical-scroll-proportion="0.36689654">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Client/src/java/com/client/report/ReportEntries.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="0" selection-start="435" selection-end="435" vertical-scroll-proportion="0.43724138">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Client/src/java/com/client/ReportCard.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="9" selection-start="1101" selection-end="1101" vertical-scroll-proportion="0.62197804">
+        <state line="12" column="18" selection-start="280" selection-end="280" vertical-scroll-proportion="0.036170214">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Client/src/java/com/client/PerformanceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="13" selection-start="293" selection-end="293" vertical-scroll-proportion="-0.10212766">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

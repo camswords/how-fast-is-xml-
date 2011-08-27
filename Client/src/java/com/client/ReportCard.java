@@ -1,38 +1,31 @@
 package com.client;
 
-import com.client.report.ReportEntryStatisticsCalculator;
+import com.client.report.ReportEntries;
 import com.client.report.Statistics;
 import com.client.time.AmountOfTime;
 
 import java.io.PrintWriter;
 import java.io.StringWriter;
-import java.util.List;
 
 public class ReportCard {
 
     private final AmountOfTime duration;
-    private final List<ReportEntry> reportEntries;
+    private final ReportEntries reportEntries;
 
-    public ReportCard(AmountOfTime duration, List<ReportEntry> reportEntries) {
+    public ReportCard(AmountOfTime duration, ReportEntries reportEntries) {
         this.reportEntries = reportEntries;
         this.duration = duration;
     }
 
     public String describe() {
-        Statistics statistics = new ReportEntryStatisticsCalculator().calculate(reportEntries);
-
-        AmountOfTime averageTime = duration.divide(reportEntries.size());
-
         StringWriter description = new StringWriter();
         PrintWriter writer = new PrintWriter(description);
 
-        writer.println("Runs (" + reportEntries.size() + " in total, " + averageTime + " average time per request)");
+        writer.println(reportEntries.describe());
 
-        for (int i = 0; i < reportEntries.size(); i++) {
-            writer.println((i + 1) + ". " + reportEntries.get(i).describe());
-        }
+        Statistics statistics = reportEntries.calculateStatistics();
 
-        writer.println("runs: " + statistics.numberOfResults());
+        writer.println(statistics.numberOfResults() + " recorded runs over " + duration);
         writer.println("maximum: " + statistics.maximum() + "ms");
         writer.println("minimum: " + statistics.minimum() + "ms");
         writer.println("average: " + statistics.average() + "ms");
