@@ -26,12 +26,16 @@ public class AmountOfTime {
         return this.asMilliseconds() < other.asMilliseconds();
     }
 
+    public boolean isAfter(AmountOfTime other) {
+        return this.asMilliseconds() > other.asMilliseconds();
+    }
+
+    public Long asMilliseconds() {
+        return unitOfTime.toMilliseconds(amount);
+    }
+
     @Override
     public String toString() {
         return amount.toString() + unitOfTime.toString();
-    }
-
-    private Long asMilliseconds() {
-        return unitOfTime.toMilliseconds(amount);
     }
 }

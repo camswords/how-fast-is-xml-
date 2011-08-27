@@ -60,22 +60,22 @@
   <component name="FileColors" enabled="true" enabledForTabs="true" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="WebServer.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Server/src/java/com/server/WebServer.java">
+      <file leaf-file-name="PerformanceTest.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Client/src/java/com/client/PerformanceTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="0" selection-start="344" selection-end="344" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="37" column="0" selection-start="991" selection-end="991" vertical-scroll-proportion="0.52112675">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PerformanceTest.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Client/src/java/com/client/PerformanceTest.java">
+      <file leaf-file-name="ReportCard.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Client/src/java/com/client/ReportCard.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="9" selection-start="900" selection-end="900" vertical-scroll-proportion="0.5978022">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="12" column="16" selection-start="255" selection-end="255" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -90,21 +90,21 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/Client/src/java/com/client/condition/Condition.java" />
-        <option value="$PROJECT_DIR$/Client/src/java/com/client/condition/ReaderIsReady.java" />
         <option value="$PROJECT_DIR$/Client/src/java/com/client/time/UnitOfTime.java" />
         <option value="$PROJECT_DIR$/Client/src/java/com/client/http/io/BufferedReader.java" />
-        <option value="$PROJECT_DIR$/Client/src/java/com/client/time/PointInTime.java" />
         <option value="$PROJECT_DIR$/Client/src/java/com/client/Run.java" />
-        <option value="$PROJECT_DIR$/Client/src/java/com/client/time/AmountOfTime.java" />
-        <option value="$PROJECT_DIR$/Client/src/java/com/client/ReportCard.java" />
         <option value="$PROJECT_DIR$/Server/src/java/com/server/EverythingsOkServer.java" />
-        <option value="$PROJECT_DIR$/Client/src/java/com/client/Action.java" />
         <option value="$PROJECT_DIR$/Client/src/java/com/client/PerformanceTestRun.java" />
-        <option value="$PROJECT_DIR$/Client/src/java/com/client/SendWebRequestAction.java" />
         <option value="$PROJECT_DIR$/Client/src/java/com/client/time/Timer.java" />
         <option value="$PROJECT_DIR$/Client/src/java/com/client/time/CountDownNotStartedException.java" />
         <option value="$PROJECT_DIR$/Client/src/java/com/client/time/CountDown.java" />
+        <option value="$PROJECT_DIR$/Client/src/java/com/client/time/PointInTime.java" />
+        <option value="$PROJECT_DIR$/Client/src/java/com/client/time/AmountOfTime.java" />
+        <option value="$PROJECT_DIR$/Client/src/java/com/client/Action.java" />
+        <option value="$PROJECT_DIR$/Client/src/java/com/client/SendWebRequestAction.java" />
+        <option value="$PROJECT_DIR$/Client/src/java/com/client/condition/TimeIsAfter.java" />
+        <option value="$PROJECT_DIR$/Client/src/java/com/client/ReportCard.java" />
+        <option value="$PROJECT_DIR$/Client/src/java/com/client/PerformanceTestBuilder.java" />
         <option value="$PROJECT_DIR$/Client/src/java/com/client/PerformanceTest.java" />
       </list>
     </option>
@@ -257,8 +257,9 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.client.time" />
       <recent name="com.client" />
+      <recent name="com.client.condition" />
+      <recent name="com.client.time" />
       <recent name="com.client.util" />
       <recent name="com.client.http" />
     </key>
@@ -301,6 +302,23 @@
       </RunnerSettings>
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Debug" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="TimeIsAfter" type="Application" factoryName="Application" temporary="true">
+      <extension name="snapshooter" />
+      <option name="MAIN_CLASS_NAME" value="com.client.condition.TimeIsAfter" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="Client" />
+      <envs />
+      <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
@@ -443,9 +461,10 @@
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
-    <list size="2">
+    <list size="3">
       <item index="0" class="java.lang.String" itemvalue="Application.WebServer" />
       <item index="1" class="java.lang.String" itemvalue="Application.PerformanceTest" />
+      <item index="2" class="java.lang.String" itemvalue="Application.TimeIsAfter" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -484,9 +503,9 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32997844" sideWeight="0.6618037" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32997844" sideWeight="0.6618037" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32891247" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32891247" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -528,16 +547,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Client/src/java/com/client/http/Response.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="51" selection-start="338" selection-end="338" vertical-scroll-proportion="0.47021276" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Client/src/java/com/client/RunReport.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="75" selection-start="508" selection-end="508" vertical-scroll-proportion="0.5978022" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Client/src/java/com/client/http/io/Socket.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="31" column="16" selection-start="800" selection-end="800" vertical-scroll-proportion="0.49361703" />
@@ -546,53 +555,6 @@
     <entry file="file://$PROJECT_DIR$/Client/src/java/com/client/http/WebServer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="23" column="16" selection-start="453" selection-end="453" vertical-scroll-proportion="0.6744681" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Client/src/java/com/client/ReportCard.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="0" selection-start="859" selection-end="859" vertical-scroll-proportion="0.589011" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Client/src/java/com/client/time/AmountOfTime.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="0" selection-start="731" selection-end="731" vertical-scroll-proportion="0.5516484" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Client/src/java/com/client/time/PointInTime.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="41" selection-start="601" selection-end="601" vertical-scroll-proportion="0.68723404" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Server/src/java/com/server/WebServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="0" selection-start="344" selection-end="344" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Client/src/java/com/client/Action.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="16" selection-start="77" selection-end="77" vertical-scroll-proportion="0.0937931">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Client/src/java/com/client/PerformanceTestRun.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="40" selection-start="448" selection-end="448" vertical-scroll-proportion="0.35172415">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Client/src/java/com/client/SendWebRequestAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="0" selection-start="326" selection-end="326" vertical-scroll-proportion="0.32827586">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Server/src/java/com/server/EverythingsOkServer.java">
@@ -623,9 +585,80 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Client/src/java/com/client/time/AmountOfTime.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="62" selection-start="963" selection-end="963" vertical-scroll-proportion="0.589011">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Client/src/java/com/client/time/PointInTime.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="44" selection-start="624" selection-end="624" vertical-scroll-proportion="0.63829786">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Client/src/java/com/client/PerformanceTestRun.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="21" selection-start="214" selection-end="214" vertical-scroll-proportion="0.32553193">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Client/src/java/com/client/SendWebRequestAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="32" selection-start="356" selection-end="356" vertical-scroll-proportion="0.16808511">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Client/src/java/com/client/Action.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="10" selection-start="118" selection-end="118" vertical-scroll-proportion="0.28936172">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Server/src/java/com/server/WebServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="0" selection-start="344" selection-end="344" vertical-scroll-proportion="0.47021276">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Client/src/java/com/client/condition/TimeIsAfter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="0" selection-start="481" selection-end="481" vertical-scroll-proportion="0.7234042">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Client/src/java/com/client/ReportCard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="16" selection-start="255" selection-end="255" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Client/src/java/com/client/PerformanceTestBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="43" selection-start="523" selection-end="523" vertical-scroll-proportion="0.4212766">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Client/src/java/com/client/PerformanceTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="9" selection-start="900" selection-end="900" vertical-scroll-proportion="0.5978022">
+        <state line="37" column="0" selection-start="991" selection-end="991" vertical-scroll-proportion="0.52112675">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

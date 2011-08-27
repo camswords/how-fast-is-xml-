@@ -1,5 +1,7 @@
 package com.client.time;
 
+import java.util.Date;
+
 public class PointInTime {
     
     private final AmountOfTime millisecondsSince1970;
@@ -16,7 +18,17 @@ public class PointInTime {
         return millisecondsSince1970.isBefore(time.millisecondsSince1970);
     }
 
+    public boolean isAfter(PointInTime time) {
+        return millisecondsSince1970.isAfter(time.millisecondsSince1970);
+    }
+
     public AmountOfTime minus(PointInTime other) {
         return millisecondsSince1970.minus(other.millisecondsSince1970);
+    }
+
+    @Override
+    public String toString() {
+        Date date = new Date(millisecondsSince1970.asMilliseconds());
+        return date.toString();
     }
 }

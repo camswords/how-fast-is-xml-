@@ -1,46 +1,49 @@
 package com.client;
 
-import com.client.http.HttpWebServerFactory;
-import com.client.http.WebServer;
-import com.client.time.*;
+import com.client.time.AmountOfTime;
+import com.client.time.CountDown;
+import com.client.time.Timer;
+import com.client.time.UnitOfTime;
+import com.client.util.Lists;
 
 import java.io.IOException;
+import java.util.List;
 
 public class PerformanceTest {
-    
-    private final WebServer webServer;
-    private final ReportCard reportCard;
-    private final AmountOfTime duration;
-    private final SystemClock systemClock;
 
-    public PerformanceTest(WebServer webServer, ReportCard reportCard, AmountOfTime duration) {
-        this.webServer = webServer;
-        this.reportCard = reportCard;
+    private final AmountOfTime duration;
+    private Action<Boolean> action;
+
+    public PerformanceTest(AmountOfTime duration, Action<Boolean> action) {
         this.duration = duration;
-        this.systemClock = new SystemClock();
+        this.action = action;
     }
 
-    private void run() {
-        CountDown countdown = new Timer(duration).countDown();
+    private ReportCard run() {
+        action.setUp();
+        List<RunReport> runReports = Lists.create();
 
-        while (countdown.isTickingAway()) {
-            RunReport runReport = new PerformanceTestRun().execute(new SendWebRequestAction(webServer));
-            reportCard.add(runReport);
+        try {
+            CountDown countdown = new Timer(duration).countDown();
+    
+            while (countdown.isTickingAway()) {
+                RunReport runReport = new PerformanceTestRun().execute(action);
+                runReports.add(runReport);
+            }
+        } finally {
+            action.cleanUp();
         }
+
+        return new ReportCard(duration, runReports);
+
     }
 
 
     public static void main(String[] args) throws IOException {
+        PerformanceTest test = new PerformanceTestBuilder().perform(new SendWebRequestAction()).forTime(2L, UnitOfTime.SECONDS).build();
 
-        AmountOfTime duration = new AmountOfTime(20L, UnitOfTime.SECONDS);
-        ReportCard reportCard = new ReportCard(duration);
-        WebServer webServer = new HttpWebServerFactory().connect();
+        ReportCard reportCard = test.run();
 
-        try {
-            new PerformanceTest(webServer, reportCard, duration).run();
-        } finally {
-            webServer.disconnect();
-        }
         System.out.println(reportCard.describe());
     }
 
