@@ -5,16 +5,20 @@ import com.client.util.ExecutingThread;
 
 public class Timer {
 
-    private final AmountOfTime maximumWaitTime;
+    private final AmountOfTime duration;
     private final SystemClock systemClock;
 
     public Timer(Integer amount, UnitOfTime unitOfTime) {
-        this.maximumWaitTime = new AmountOfTime(amount.longValue(), unitOfTime);
+        this(new AmountOfTime(amount.longValue(), unitOfTime));
+    }
+
+    public Timer(AmountOfTime duration) {
+        this.duration = duration;
         this.systemClock = new SystemClock();
     }
 
     public void waitFor(Condition condition) {
-        PointInTime endTime = systemClock.now().plus(maximumWaitTime);
+        PointInTime endTime = systemClock.now().plus(duration);
 
         while(systemClock.now().isBefore(endTime)) {
             if (condition.isSatisfied()) {
@@ -24,8 +28,12 @@ public class Timer {
             ExecutingThread.waitATinyBit();
         }
 
-        String message = "Condition [" + condition.describe() + "] failed to be satisfied within " + maximumWaitTime;
+        String message = "Condition [" + condition.describe() + "] failed to be satisfied within " + duration;
         throw new ConditionFailedToBeSatisfiedWithinTime(message);
         
+    }
+
+    public CountDown countDown() {
+        return new CountDown(duration).start();
     }
 }

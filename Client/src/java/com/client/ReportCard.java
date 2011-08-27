@@ -7,7 +7,7 @@ import java.util.List;
 
 public class ReportCard {
 
-    private final List<Run> runs = Lists.create();
+    private final List<RunReport> runReports = Lists.create();
     private final AmountOfTime testDuration;
 
     public ReportCard(AmountOfTime testDuration) {
@@ -15,19 +15,19 @@ public class ReportCard {
     }
 
     public String describe() {
-        AmountOfTime averageTime = testDuration.divide(runs.size());
+        AmountOfTime averageTime = testDuration.divide(runReports.size());
 
         StringBuilder description = new StringBuilder();
-        description.append("Runs (" + runs.size() + " in total, " + averageTime + " average time per request)\n");
+        description.append("Runs (" + runReports.size() + " in total, " + averageTime + " average time per request)\n");
         description.append("--------------------\n");
-        for (Run run : runs) {
-            description.append(run.describe() + "\n");
+        for (RunReport runReport : runReports) {
+            description.append(runReport.describe() + "\n");
         }
         description.append("--------------------\n");
         return description.toString();
     }
 
-    public void add(Run run) {
-        runs.add(run);
+    public void add(RunReport runReport) {
+        runReports.add(runReport);
     }
 }

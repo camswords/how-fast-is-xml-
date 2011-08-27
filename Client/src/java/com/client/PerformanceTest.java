@@ -1,13 +1,8 @@
 package com.client;
 
-import com.client.http.GetRequest;
 import com.client.http.HttpWebServerFactory;
-import com.client.http.Response;
 import com.client.http.WebServer;
-import com.client.time.AmountOfTime;
-import com.client.time.PointInTime;
-import com.client.time.SystemClock;
-import com.client.time.UnitOfTime;
+import com.client.time.*;
 
 import java.io.IOException;
 
@@ -26,14 +21,11 @@ public class PerformanceTest {
     }
 
     private void run() {
-        PointInTime endTime = systemClock.now().plus(duration);
+        CountDown countdown = new Timer(duration).countDown();
 
-        while(systemClock.now().isBefore(endTime)) {
-            PointInTime startTime = systemClock.now();
-
-            Response response = webServer.send(new GetRequest("/"));
-
-            reportCard.add(new Run(startTime, systemClock.now(), response.isOk()));
+        while (countdown.isTickingAway()) {
+            RunReport runReport = new PerformanceTestRun().execute(new SendWebRequestAction(webServer));
+            reportCard.add(runReport);
         }
     }
 
