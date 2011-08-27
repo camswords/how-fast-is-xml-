@@ -20,16 +20,15 @@ public class PerformanceTest {
     }
 
     private ReportCard run() {
-        List<RunReport> runReports = Lists.create();
+        List<ReportEntry> reportEntries = Lists.create();
 
         CountDown countdown = new Timer(duration).countDown();
 
         while (countdown.isTickingAway()) {
-            runReports.add(new PerformanceTestRun().execute(action));
+            reportEntries.add(new PerformanceTestRun().execute(action));
         }
 
-        return new ReportCard(duration, runReports);
-
+        return new ReportCard(duration, reportEntries);
     }
 
 
