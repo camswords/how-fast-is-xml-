@@ -1,7 +1,7 @@
 package com.client;
 
-public interface Action<RETURN_TYPE> {
+public interface Action {
 
-    RETURN_TYPE execute();
+    Boolean execute();
 
 }

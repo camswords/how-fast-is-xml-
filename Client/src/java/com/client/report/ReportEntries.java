@@ -1,7 +1,5 @@
 package com.client.report;
 
-import com.client.ReportEntry;
-
 import java.io.PrintWriter;
 import java.io.StringWriter;
 import java.util.List;

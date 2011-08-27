@@ -1,7 +1,5 @@
-package com.client;
+package com.client.report;
 
-import com.client.report.ReportEntries;
-import com.client.report.Statistics;
 import com.client.time.AmountOfTime;
 
 import java.io.PrintWriter;

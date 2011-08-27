@@ -1,15 +1,14 @@
 package com.client;
 
-import com.client.condition.Condition;
 import com.client.time.AmountOfTime;
 import com.client.time.UnitOfTime;
 
 public class PerformanceTestBuilder {
 
-    private Action<Boolean> action;
+    private Action action;
     private AmountOfTime duration;
 
-    public PerformanceTestBuilder perform(Action<Boolean> action) {
+    public PerformanceTestBuilder perform(Action action) {
         this.action = action;
         return this;
     }

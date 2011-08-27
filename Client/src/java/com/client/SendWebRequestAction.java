@@ -5,15 +5,7 @@ import com.client.http.HttpWebServerFactory;
 import com.client.http.Response;
 import com.client.http.WebServer;
 
-public class SendWebRequestAction implements Action<Boolean> {
-
-    private final HttpWebServerFactory webServerFactory;
-    private WebServer webServer;
-
-    public SendWebRequestAction() {
-        this.webServerFactory = new HttpWebServerFactory();
-        this.webServer = null;
-    }
+public class SendWebRequestAction implements Action {
 
     public Boolean execute() {
         WebServer webServer = new HttpWebServerFactory().connect();
