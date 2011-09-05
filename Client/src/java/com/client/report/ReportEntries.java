@@ -15,8 +15,8 @@ public class ReportEntries {
     public Statistics calculateStatistics() {
         Statistics statistics = new Statistics();
 
-        for (int i = 1; i < reportEntries.size(); i++) {
-            reportEntries.get(i).addTo(statistics);
+        for (ReportEntry reportEntry : reportEntries) {
+            reportEntry.addTo(statistics);
         }
 
         return statistics;

@@ -4,9 +4,8 @@ import com.client.http.GetRequest;
 import com.client.http.HttpWebServerFactory;
 import com.client.http.Response;
 import com.client.http.WebServer;
-import com.client.run.Action;
 
-public class SendWebRequestAction implements Action {
+public class SendSimpleWebRequestAction implements Action {
 
     public Boolean execute() {
         WebServer webServer = new HttpWebServerFactory().connect();
@@ -17,5 +16,9 @@ public class SendWebRequestAction implements Action {
         } finally {
             webServer.disconnect();
         }
+    }
+
+    public String describe() {
+        return "web request that always returns a 200 response";
     }
 }

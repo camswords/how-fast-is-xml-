@@ -10,10 +10,10 @@ public class SocketConnectionFactory {
         java.net.Socket socket = new java.net.Socket();
 
         try {
-            socket.connect(new InetSocketAddress(InetAddress.getLocalHost(), 8080));
+            socket.connect(new InetSocketAddress(InetAddress.getLocalHost(), 8080), 1000);
         } catch (IOException e) {
             throw new FailedToConnectException("failed to connect to localhost:8080", e);
-        };
+        }
 
         return new Socket(socket);
     }

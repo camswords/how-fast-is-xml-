@@ -4,4 +4,5 @@ public interface Action {
 
     Boolean execute();
 
+    String describe();
 }

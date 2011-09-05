@@ -8,27 +8,35 @@ import java.io.StringWriter;
 public class ReportCard {
 
     private final AmountOfTime duration;
+    private final String description;
     private final ReportEntries reportEntries;
 
-    public ReportCard(AmountOfTime duration, ReportEntries reportEntries) {
+    public ReportCard(AmountOfTime duration, String description, ReportEntries reportEntries) {
+        this.description = description;
         this.reportEntries = reportEntries;
         this.duration = duration;
     }
 
-    public String describe() {
-        StringWriter description = new StringWriter();
-        PrintWriter writer = new PrintWriter(description);
+    public String describeEntries() {
+        StringWriter entriesDescription = new StringWriter();
+        PrintWriter writer = new PrintWriter(entriesDescription);
 
         writer.println(reportEntries.describe());
+        return entriesDescription.toString();
+    }
+
+    public String summarise() {
+        StringWriter summary = new StringWriter();
+        PrintWriter writer = new PrintWriter(summary);
 
         Statistics statistics = reportEntries.calculateStatistics();
 
-        writer.println(statistics.numberOfResults() + " recorded runs over " + duration);
-        writer.println("maximum: " + statistics.maximum() + "ms");
-        writer.println("minimum: " + statistics.minimum() + "ms");
-        writer.println("average: " + statistics.average() + "ms");
-        writer.println("deviation: " + statistics.standardDeviation() + "ms");
+        writer.print("Tested " + statistics.numberOfResults() + " recorded runs (" + duration + ")");
+        writer.println(" for \"" + this.description + "\"");
+        writer.print("   average time per request: " + statistics.average() + "ms");
+        writer.print(" (" + statistics.minimum() + "ms - " + statistics.maximum() + "ms");
+        writer.print(", +/- " + statistics.standardDeviation() + "ms)");
 
-        return description.toString();
+        return summary.toString();
     }
 }

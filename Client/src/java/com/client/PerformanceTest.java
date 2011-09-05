@@ -5,14 +5,11 @@ import com.client.report.ReportEntries;
 import com.client.report.ReportEntry;
 import com.client.run.Action;
 import com.client.run.PerformanceTestRun;
-import com.client.run.SendWebRequestAction;
 import com.client.time.AmountOfTime;
 import com.client.time.CountDown;
 import com.client.time.Timer;
-import com.client.time.UnitOfTime;
 import com.client.util.Lists;
 
-import java.io.IOException;
 import java.util.List;
 
 public class PerformanceTest {
@@ -25,7 +22,7 @@ public class PerformanceTest {
         this.action = action;
     }
 
-    private ReportCard run() {
+    public ReportCard run() {
         List<ReportEntry> reportEntries = Lists.create();
 
         CountDown countdown = new Timer(duration).countDown();
@@ -34,20 +31,6 @@ public class PerformanceTest {
             reportEntries.add(new PerformanceTestRun().execute(action));
         }
 
-        return new ReportCard(duration, new ReportEntries(reportEntries));
+        return new ReportCard(duration, action.describe(), new ReportEntries(reportEntries));
     }
-
-
-    public static void main(String[] args) throws IOException {
-        PerformanceTest test = new PerformanceTestBuilder()
-                                    .perform(new SendWebRequestAction())
-                                    .forTime(60L, UnitOfTime.SECONDS)
-                                    .build();
-
-        ReportCard reportCard = test.run();
-
-        System.out.println(reportCard.describe());
-    }
-
-
 }
